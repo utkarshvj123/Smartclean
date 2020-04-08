@@ -1,0 +1,111 @@
+.side-main{
+    display: flex;
+    height: 100vh;
+}
+
+.container-main{
+    width: 100%;
+    // transition: margin-left .5s;
+    @media screen and (max-width: 1024px) and (min-width: 768px){
+        transition: margin-left .5s;
+    }
+}
+
+.container-main-width{
+    // width: calc(100% - 250px);
+    width: 100%;
+    // transition: margin-left .5s;
+    @media screen and (max-width: 1024px) and (min-width: 768px){
+        width: calc(100% - 250px);
+        transition: margin-left .5s;
+    }
+    @media screen and (max-width: 767px) and (min-width: 320px){
+        width: calc(100% - 500px);
+        transition: margin-left .5s;
+    }
+}
+
+.main-container{
+    padding: 20px;
+    @media screen and (max-width: 1024px) and (min-width: 768px){
+        overflow: scroll;
+    }
+}
+
+.react-calendar__tile{
+    border: 1px solid #ccc !important;
+    padding: 28.3px;
+    @media screen and (max-width: 767px) and (min-width: 320px){
+        padding: 14px 22px !important;
+    }
+}
+.react-calendar{
+    height: 490px;
+    width: 100%;
+}
+
+.react-calendar__navigation{
+    position: relative;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0 10px;
+}
+
+.react-calendar__month-view__weekdays__weekday{
+    border: 1px solid #ccc !important;
+}
+
+.react-calendar__tile--active{
+  background-color: #a167c9 !important;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr{
+    text-decoration: none !important;
+}
+.react-calendar__navigation__label{
+    // flex-grow: unset !important;
+    position: absolute;
+    // padding: 20px;
+    font-size: 25px;
+    &:hover{
+        background-color: transparent !important;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.react-calendar__navigation__prev2-button{
+    display: none !important;
+}
+
+.react-calendar__navigation__next2-button{
+    display: none !important;
+}
+
+.react-calendar__navigation__prev-button{
+ background-color: #32395cd6 !important;
+ color: #fff;
+ font-size: 35px;
+ padding: 10px 0;
+ position: absolute;
+ right: 55px;
+//  position: relative;
+//  right: -33rem;
+//  top: 7px;
+
+}
+.react-calendar__navigation__next-button{
+    background-color: #32395cd6 !important;
+    color: #fff;
+    font-size: 35px;
+    position: absolute;
+    right: 10px;
+    padding: 10px 0;
+    // position: relative;
+    // right: -33rem;
+    // top: 7px;
+}
+.react-calendar{
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.26);
+    border-radius: 5px;
+}

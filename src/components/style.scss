@@ -1,0 +1,144 @@
+//* card component *//
+
+.custom-card {
+    width: 320px;
+    height: auto;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .26);
+    background: #f3f3f3;
+    margin: auto;
+    padding: 54px 25px;
+    border-radius: 4px;
+}
+
+.card-link {
+    color: #007bff !important;
+
+    &:hover {
+        border-bottom: 1px solid #007bff;
+        color: #007bff !important;
+        cursor: pointer;
+    }
+}
+
+
+//* side bar component *//
+
+.nav-content {
+    color: #a167c9;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 0px 13px 0px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    background-color: #fafafa;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.26);
+}
+
+.sidebar a {
+    // padding: 8px 8px 8px 32px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #a167c9;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidebar a:hover,
+a:focus,
+a:active {
+    color: #a167c9;
+    background-color: #ccc;
+    text-decoration: none;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+.closeNav {
+    width: 0;
+}
+
+.openNav {
+    // width: calc(100% - 80%);
+    width: 250px;
+
+}
+
+//* navbar component *//
+
+.nav-bar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    box-shadow: 0px 0px 5px #ccc;
+    @media screen and (max-width: 767px) and (min-width: 320px){
+        display: grid;
+    }
+}
+
+.custom-list {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0px;
+    @media screen and (max-width: 767px) and (min-width: 320px){
+        padding: 20px 0 0 0
+    }
+}
+
+.custom-list li {
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    
+    &:hover,
+    &:focus,
+    &:active {
+        color: #a167c9;
+        border-bottom: 3px solid #a167c9;
+    }
+    @media screen and (max-width: 767px) and (min-width: 320px){
+        margin: 0 4px !important;
+        font-size: 16px !important;
+    }
+}
+
+
+
+/* burger menu css */
+
+.menu-icon {
+    background-color: #a167c9;
+    padding: 5px 10px 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+        @media screen and (max-width: 767px) and (min-width: 320px){
+            width: 43px;
+        }
+}
+
+.raphael-group text{
+    display: none !important;
+}
