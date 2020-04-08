@@ -18,9 +18,7 @@ function App(props) {
       <Router>
         <Switch>
           <Route exact path="/landing-page" component={LandingPage} />
-          <Route exact path="/dash" component={Dashboard} />
           <AuthRoute isValidUser={props.isValidUser}/>
-
           <Route
             exact
             path="/"

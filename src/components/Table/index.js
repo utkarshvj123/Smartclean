@@ -20,9 +20,6 @@ const DatatablePage = (props) => {
   );
 };
 
-
-
-
 // const mapStateToProps = ({ homeData }) => {
 //   return { data:homeData };
 // };
